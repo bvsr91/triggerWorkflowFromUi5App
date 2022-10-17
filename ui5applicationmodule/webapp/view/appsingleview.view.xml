@@ -1,0 +1,12 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" controllerName="ui5applicationmodule.controller.appsingleview" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox width="50%" direction="Column" id="vbox0" alignContent="Center">
+                <Input xmlns="sap.m" id="employeeInput" placeholder="Type your name here"/>
+                <Input xmlns="sap.m" id="itequipmentInput" placeholder="Type your desired IT equipment"/>
+                <Button text="Send your request" press="onSendRequest"/>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

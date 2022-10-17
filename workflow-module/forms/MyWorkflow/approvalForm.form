@@ -1,0 +1,42 @@
+{
+    "id": "approvalform",
+    "schemaVersion": "1.1.0",
+    "name": "approvalForm",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "employee",
+            "type": "string",
+            "label": "Employee",
+            "readOnly": false,
+            "value": "${context.employee}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "it_equipment",
+            "type": "string",
+            "label": "IT Equipment",
+            "readOnly": false,
+            "value": "${context.itequipment}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}
